@@ -1,0 +1,99 @@
+
+.navbar {
+  padding: 10%;
+}
+.welcome-message{
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  z-index: 1;
+  color: white;
+}
+
+.landing{
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 10%;
+  background-image: url(/assets/landing.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+
+
+}
+.box-landing{
+  width: 80%;
+  height: 50vh;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: white
+
+}
+// SIGN UP PAGE
+.sign-up-page{
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.box-img-sign-up{
+  width: 50%;
+  height: 100%;
+  background-image: url(/assets/sign-up);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+
+.form-sign-up{
+  width: 50%;
+  padding: 5% 10%;
+
+}
+
+@import "bootstrap";
+
+.alert, .notice {
+  position: absolute;
+  top: 7%;
+
+}
+.title{
+  font-size: 5rem;
+}
+
+.subtitle{
+  font-size: 1.5rem;
+  margin: 5% auto;
+  width: 50%;
+}
+.form-input{
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+}
+.btn-landing{
+  padding: 2% 5%;
+  font-weight: bold;
+  margin: 5% 25%;
+  width: 20%;
+  border-radius: 10px;
+}
+.btn-form{
+  width: 50%;
+}
+.center-content-register{
+  text-align: center;
+
+}
+.btn-landing-log{
+  background-color: #1F2629;
+  padding: 2% 5%;
+  font-weight: bold;
+  margin: 5% 25%;
+  width: 50%;
+  border-radius: 10px;
+}

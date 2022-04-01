@@ -1,0 +1,21 @@
+<div id="<%= dom_id workout %>">
+
+  <p>
+    <strong>Title:</strong>
+    <%= workout.title %>
+  </p>
+  <strong>Exercises:</strong>
+  <%i = 0%>
+  <div class="exercises">
+  <% for exercise in workout.exercises do %>
+    <% if workout.exercises.length > 0 %>
+    <li class="exercise">
+      <p><%= workout.exercises[i].name%></p>
+      <p>Reps : <%= workout.exercises[i].reps%></p>
+      <p>Series : <%= workout.exercises[i].series%></p>
+    </li>
+    <% i += 1%>
+  <% end %>
+  <% end %>
+  </div>
+</div>

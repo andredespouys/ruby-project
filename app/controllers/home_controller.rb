@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-  end
+    #Top page generation
 
+  end
 end

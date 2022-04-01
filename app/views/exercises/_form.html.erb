@@ -1,0 +1,10 @@
+
+ <%= simple_form_for [@workout, @exercise], url: workout_exercises_path do |f| %>
+
+  <%= f.input :name%>
+  <%= f.input :reps%>
+  <%= f.input :series%>
+  <br>
+  <%= f.button :submit%>
+
+<% end %>

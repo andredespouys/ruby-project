@@ -1,0 +1,19 @@
+ <%= simple_form_for workout do |f| %>
+  <% if workout.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
+
+      <ul>
+        <% workout.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <%end%>
+
+
+  <%= f.input :title%>
+  <br>
+  <%= f.button :submit%>
+
+<% end %>

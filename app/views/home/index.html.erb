@@ -1,2 +1,16 @@
-<h1>This is another page</h1>
-<div class="lead my-3"><%= link_to "go to home page", root_path %></div>' >> app/views/other/index.html.erb
+<% name = current_user.present? ? current_user.email : 'Stranger' %>
+
+<h3 class="welcome-message">Welcome back, <%= name %> </h3>
+
+<section class="landing">
+  <%# <img src='/assets/landing.png' alt='icon' /> %>
+  <div class="box-landing">
+    <h1 class="title h1">SCROLL LESS <br> LIFT MORE</h1>
+    <p class="subtitle">FORT LIFT is the simplest, most intuitive workout tracking experience.
+Trusted by over 1 user worldwide.</p>
+    <%= link_to 'Start tracking', new_user_session_path, class: 'btn btn-primary btn-landing' %>
+
+
+  </div>
+
+</section>
