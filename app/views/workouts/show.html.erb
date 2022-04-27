@@ -2,10 +2,9 @@
 
 <%= render @workout %>
 
-<div>
-  <%= link_to "Edit this workout", edit_workout_path(@workout) %> |
-  <%= link_to  "New exercise ", new_workout_exercise_path(@workout)%>
-  <%= link_to "Back to workouts", workouts_path %>
-
-  <%= button_to "Destroy this workout", @workout, method: :delete %>
+<div class="box-btn-workouts">
+  <%= link_to "Edit this workout", edit_workout_path(@workout), class:"btn btn-primary" %>
+  <%= link_to  "New exercise ", new_workout_exercise_path(@workout), class:"btn btn-secondary"%>
+  <%= link_to "Back to workouts", workouts_path , class:"btn btn-dark"%>
+  <%= button_to "Destroy this workout", @workout, method: :delete, class:"btn btn-danger" %>
 </div>

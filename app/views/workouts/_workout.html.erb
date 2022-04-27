@@ -1,21 +1,41 @@
-<div id="<%= dom_id workout %>">
+<div class= "flex-workouts" id="<%= dom_id workout %>">
 
-  <p>
-    <strong>Title:</strong>
+  <h1 class="title-workouts">
+
     <%= workout.title %>
-  </p>
-  <strong>Exercises:</strong>
-  <%i = 0%>
-  <div class="exercises">
-  <% for exercise in workout.exercises do %>
-    <% if workout.exercises.length > 0 %>
-    <li class="exercise">
-      <p><%= workout.exercises[i].name%></p>
-      <p>Reps : <%= workout.exercises[i].reps%></p>
-      <p>Series : <%= workout.exercises[i].series%></p>
-    </li>
+  </h1>
+    <table class="table-workout">
+
+    <%i = 0%>
+    <tr class="first-row">
+    <td>Exercise</td>
+    <td>Reps</td>
+    <td>Series</td>
+    </tr>
+    <% for exercise in workout.exercises do %>
+      <% if workout.exercises.length > 0 %>
+    <tr >
+      <td> <%= workout.exercises[i].name%></td>
+      <td> <%= workout.exercises[i].reps%></td>
+      <td> <%= workout.exercises[i].series%></td>
+
+
+      <% end %>
     <% i += 1%>
-  <% end %>
-  <% end %>
-  </div>
+    <% end %>
+
+    </table>
+  <%# <tr>
+
+
+  </tr>
+  <tr></tr>
+  <div class="exercises">
+
+
+  </div> %>
+
+  </table>
+
+
 </div>

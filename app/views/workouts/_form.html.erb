@@ -10,10 +10,13 @@
       </ul>
     </div>
     <%end%>
-
-
-  <%= f.input :title%>
+  <div class="mb-3">
+   <%= f.input :title , class:"form-control"%>
   <br>
-  <%= f.button :submit%>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+  <%= link_to "Back to workouts", workouts_path, class:"btn btn-secondary"%>
+
+</div>
+
 
 <% end %>
